@@ -253,7 +253,6 @@ nav ul li {
     align-items: left;
     justify-content: center;
 }
-<<<<<<< HEAD
 
 .contact{
     display: flex;
@@ -261,15 +260,3 @@ nav ul li {
     align-items: left;
     justify-content: center;
 }
-=======
-  
-.bio h1 {
-    margin-bottom: var(--bottom-margin);
-}
-  
-.bio p {
-    line-height: var(--line-height);
-    padding: 0.3rem 0;
-}
-/* About End */
->>>>>>> 120ef95bd817290994230ea1ed8e3ceb84571016
