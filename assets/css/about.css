@@ -1,0 +1,11 @@
+@import "styles.css";
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+.bio-text {
+    padding: 1rem;
+}

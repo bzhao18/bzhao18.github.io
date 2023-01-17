@@ -1,0 +1,123 @@
+@import "styles.css";
+
+.landing{
+    padding: 0rem;
+    display: grid;
+    grid-template-columns: 1fr 0.25fr 6fr 2fr 2fr;
+    grid-template-rows: auto 6rem 1fr;
+    position: relative;
+    margin-bottom: var(--section-space);
+}
+
+.landing a {
+    border-bottom: none;
+}
+
+.landing a:hover {
+    border-bottom: none;
+}
+
+.landing-name{
+    grid-column: 2 / 5;
+    grid-row: 1;
+    padding-top: 5%;
+    z-index: 3;
+    font-family: var(--header-font-family);
+    font-weight: var(--bolder-font);
+    font-size: clamp(5rem, 11vw, 10rem);
+    background-color: var(--primary-accent);
+    background-image: linear-gradient(
+        30deg,
+        var(--primary-accent) 25%, 
+        var(--secondary-color) 50%, 
+        var(--primary-color) 100%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    animation: animate-landing-text-rev 0.25s ease forwards;
+}
+.landing-name:hover{
+    animation: animate-landing-text 0.75s ease-in forwards;
+}
+@keyframes animate-landing-text-rev {
+    0% {
+        background-size: 1000%;
+    }
+    40% {
+        background-size: 1000%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+@keyframes animate-landing-text {
+    0% {
+        background-size: 100%;
+    }
+    80% {
+        background-size: 2000%;
+    }
+    100% {
+        background-size: 2000%;
+    }
+}
+
+.landing-social{
+    grid-column: 3 / 5;
+    grid-row: 2;
+    z-index: 2;
+    align-self: center;
+}
+.social-icon{
+    margin: 1rem;
+}
+
+.landing-text{
+    grid-column: 3 / 4;
+    grid-row: 3;
+    z-index: 2;
+    align-self: start;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.landing-text-titles p{
+    line-height: 1;
+    margin-bottom: 1rem;
+}
+
+.landing-text-cta{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-self: start;
+}
+.landing-text-cta button{
+    font-family: var(--header-font-family);
+    font-weight: var(--bolder-font);
+    font-size: 2rem;
+    color: var(--secondary-color);
+    border: 3px solid var(--secondary-color);
+    background-color: var(--bg-color);
+    border-radius: 12px;
+    margin: 0.5rem;
+    padding: 4px;
+    cursor: pointer;
+}
+.landing-text-cta button:hover{
+    color: var(--bg-color);
+    border: 3px solid var(--primary-accent);
+    background-color: var(--primary-accent);
+    transition: var(--transition);
+}
+
+.landing-profile-img{
+    grid-column: 4 / 6;
+    grid-row: 1 / 4;
+    z-index: 1;
+    max-width: 90%;
+    height: auto;
+    width: auto;
+    align-self: end;
+}

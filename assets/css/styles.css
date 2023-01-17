@@ -5,6 +5,7 @@
 /* Variables */
 :root {
     --font-family: "Gothic A1", sans-serf;
+    --header-font-family: "Montserrat", sans-serf;
     --thin-font: 200;
     --normal-font: 400;
     --bold-font: 700;
@@ -37,226 +38,50 @@ a {
     font-weight: var(--bold-font);
     text-decoration: none;
     color: var(--secondary-color);
+    border-bottom: 3px solid var(--secondary-color);
 }
 
 a:hover {
     color: var(--primary-accent);
     transition: var(--transition);
+    border-bottom: 3px solid var(--primary-accent);
+    transition: var(--transition);
 }
 
 body {
     font-family: var(--font-family);
-    color: var(--primary-color)
+    font-weight: var(--normal-font);
+    color: var(--primary-color);
+    font-size: 1.5rem;
 }
 section {
     scroll-margin-top: 6rem;
     padding: 0rem 5rem;
     margin-bottom: var(--section-space);
 }
-h2 {
-    font-family: "Montserrat";
+
+h1 {
+    font-family: var(--header-font-family);
     font-weight: var(--bolder-font);
     font-size: 4rem;
     color: var(--secondary-color);
 }
-/* CSS Resets End */
-
-
-/* Navbar Start */
-nav {
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem 7rem;
-    background-color: var(--bg-color);
-  }
-
-.nav-initials {
-    font-family: "Major Mono Display";
-    font-size: 3rem;
+h2 {
+    font-family: var(--header-font-family);
+    font-weight: var(--bolder-font);
+    font-size: 2rem;
     color: var(--secondary-color);
-  }
-.nav-initials:hover {
-    color: var(--primary-accent);
-    transition: var(--transition);
 }
-
-.nav-link {
-    color: var(--secondary-color);
-    border-bottom: 2px solid transparent;
-}
-.nav-link:hover {
-    color: var(--primary-accent);
-    border-bottom: 2px solid var(--primary-accent);
-    transition: var(--transition);
-}
-
-nav ul {
-    display: flex;
-    gap: 5rem;
-}
-
-nav ul li {
+h3 {
+    font-family: var(--header-font-family);
     font-weight: var(--bold-font);
-    font-size: 1.25rem;
-}
-/* Navbar End */
-
-
-/* Landing Start */
-.landing{
-    padding: 0rem;
-    display: grid;
-    grid-template-columns: 1fr 0.25fr 6fr 2fr 2fr;
-    grid-template-rows: auto 6rem 1fr;
-    position: relative;
-    margin-bottom: var(--section-space);
-}
-
-.landing-name{
-    grid-column: 2 / 5;
-    grid-row: 1;
-    padding-top: 5%;
-    z-index: 3;
-    font-family: "Montserrat";
-    font-weight: var(--bolder-font);
-    font-size: clamp(5rem, 11vw, 10rem);
-    background-color: var(--primary-accent);
-    background-image: linear-gradient(
-        30deg,
-        var(--primary-accent) 25%, 
-        var(--secondary-color) 50%, 
-        var(--primary-color) 100%);
-    background-size: 100%;
-    background-repeat: repeat;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    animation: animate-landing-text-rev 0.25s ease forwards;
-}
-.landing-name:hover{
-    animation: animate-landing-text 0.75s ease-in forwards;
-}
-@keyframes animate-landing-text-rev {
-    0% {
-        background-size: 1000%;
-    }
-    40% {
-        background-size: 1000%;
-    }
-    100% {
-        background-size: 100%;
-    }
-}
-@keyframes animate-landing-text {
-    0% {
-        background-size: 100%;
-    }
-    80% {
-        background-size: 2000%;
-    }
-    100% {
-        background-size: 2000%;
-    }
-}
-
-.landing-social{
-    grid-column: 3 / 5;
-    grid-row: 2;
-    z-index: 2;
-    align-self: center;
-}
-.social-icon{
-    margin: 1rem;
-}
-
-.landing-text{
-    grid-column: 3 / 4;
-    grid-row: 3;
-    z-index: 2;
-    align-self: start;
     font-size: 1.5rem;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
+    color: var(--primary-color);
 }
-.landing-text-titles p{
-    line-height: 1;
-    margin-bottom: 1rem;
+h4 {
+    font-family: var(--font-family);
+    font-weight: var(--normal-font);
+    font-size: 1.25rem;
+    color: var(--primary-color);
 }
-
-.landing-text-cta{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-self: start;
-}
-.landing-text-cta button{
-    font-family: "Montserrat";
-    font-weight: var(--bolder-font);
-    font-size: 2rem;
-    color: var(--secondary-color);
-    border: 3px solid var(--secondary-color);
-    background-color: var(--bg-color);
-    border-radius: 12px;
-    margin: 0.5rem;
-    padding: 4px;
-    cursor: pointer;
-}
-.landing-text-cta button:hover{
-    color: var(--bg-color);
-    border: 3px solid var(--primary-accent);
-    background-color: var(--primary-accent);
-    transition: var(--transition);
-}
-
-.landing-profile-img{
-    grid-column: 4 / 6;
-    grid-row: 1 / 4;
-    z-index: 1;
-    max-width: 90%;
-    height: auto;
-    width: auto;
-    align-self: end;
-}
-/* Landing End */
-
-
-
-/* About Start */
-.about{
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-}
-.bio-text {
-    font-size: 2rem;
-    padding: 1rem;
-}
-.bio a{
-    border-bottom: 3px solid var(--secondary-color);
-}
-.bio a:hover{
-    border-bottom: 3px solid var(--primary-accent);
-    transition: var(--transition);
-}
-/* About End */
-
-
-.experience{
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-}
-
-.contact{
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: center;
-}
+/* CSS Resets End */

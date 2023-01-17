@@ -1,0 +1,43 @@
+@import "styles.css";
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7rem;
+    background-color: var(--bg-color);
+  }
+
+.nav-initials {
+    font-family: "Major Mono Display";
+    font-size: 3rem;
+    color: var(--secondary-color);
+  }
+.nav-initials:hover {
+    color: var(--primary-accent);
+    transition: var(--transition);
+}
+
+.nav-link {
+    color: var(--secondary-color);
+    border-bottom: 2px solid transparent;
+}
+.nav-link:hover {
+    color: var(--primary-accent);
+    border-bottom: 2px solid var(--primary-accent);
+    transition: var(--transition);
+}
+
+nav ul {
+    display: flex;
+    gap: 5rem;
+}
+
+nav ul li {
+    font-weight: var(--bold-font);
+    font-size: 1.25rem;
+}
