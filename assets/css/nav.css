@@ -16,10 +16,12 @@ nav {
     font-family: "Major Mono Display";
     font-size: 3rem;
     color: var(--secondary-color);
+    border-bottom: none;
   }
 .nav-initials:hover {
     color: var(--primary-accent);
     transition: var(--transition);
+    border-bottom: none;
 }
 
 .nav-link {
