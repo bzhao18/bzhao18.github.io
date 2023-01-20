@@ -1,0 +1,27 @@
+@import "styles.css";
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    background-color: var(--secondary-color);
+    padding: 2rem;
+    margin-bottom: 0rem;
+}
+
+.footer p {
+    color: var(--primary-accent);
+    font-size: 1.25rem;
+}
+
+.footer a {
+    color: var(--primary-accent);
+    border-bottom: 2px solid transparent;
+}
+
+.footer a:hover {
+    color: var(--primary-accent);
+    border-bottom: 2px solid var(--primary-accent);
+}
