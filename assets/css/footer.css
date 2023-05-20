@@ -1,6 +1,7 @@
 @import "styles.css";
 
 .footer{
+    height: 15vh;
     display: flex;
     flex-direction: row;
     align-items: center;

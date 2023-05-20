@@ -1,12 +1,18 @@
 @import "styles.css";
 
 .landing{
-    padding: 0rem;
-    display: grid;
-    grid-template-columns: 1fr 0.25fr 6fr 2fr 2fr;
-    grid-template-rows: auto 6rem 1fr;
+    padding: 0rem 5rem;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
     position: relative;
     margin-bottom: var(--section-space);
+    background-image: url("../images/profile_v0.png");
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-attachment: 'local';
+    background-position: bottom right;
 }
 
 .landing a {
@@ -18,10 +24,7 @@
 }
 
 .landing-name{
-    grid-column: 2 / 5;
-    grid-row: 1;
     padding-top: 5%;
-    z-index: 3;
     font-family: var(--header-font-family);
     font-weight: var(--bolder-font);
     font-size: clamp(5rem, 11vw, 10rem);
@@ -63,21 +66,11 @@
     }
 }
 
-.landing-social{
-    grid-column: 3 / 5;
-    grid-row: 2;
-    z-index: 2;
-    align-self: center;
-}
 .social-icon{
     margin: 1rem;
 }
 
 .landing-text{
-    grid-column: 3 / 4;
-    grid-row: 3;
-    z-index: 2;
-    align-self: start;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -91,7 +84,7 @@
     display: flex;
     flex-direction: row;
     justify-content: left;
-    align-self: start;
+    justify-content: left;
 }
 .landing-text-cta button{
     font-family: var(--header-font-family);
