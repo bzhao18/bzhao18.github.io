@@ -24,7 +24,7 @@
 }
 
 .landing-name{
-    padding-top: 5%;
+    padding-top: 4%;
     font-family: var(--header-font-family);
     font-weight: var(--bolder-font);
     font-size: clamp(5rem, 11vw, 10rem);
@@ -44,28 +44,20 @@
     animation: animate-landing-text 0.75s ease-in forwards;
 }
 @keyframes animate-landing-text-rev {
-    0% {
-        background-size: 1000%;
-    }
-    40% {
-        background-size: 1000%;
-    }
-    100% {
-        background-size: 100%;
-    }
+    0% {background-size: 1000%;}
+    40% {background-size: 1000%;}
+    100% {background-size: 100%;}
 }
 @keyframes animate-landing-text {
-    0% {
-        background-size: 100%;
-    }
-    80% {
-        background-size: 2000%;
-    }
-    100% {
-        background-size: 2000%;
-    }
+    0% {background-size: 100%;}
+    80% {background-size: 2000%;}
+    100% {background-size: 2000%;}
 }
 
+.landing-social {
+    font-size: 1.15rem;
+    padding: 0.5rem;
+}
 .social-icon{
     margin: 1rem;
 }
