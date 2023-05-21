@@ -96,6 +96,7 @@
 .landing-text-cta{
     display: flex;
     flex-direction: row;
+    margin-bottom: 5rem;
 }
 .landing-text-cta button{
     font-family: var(--header-font-family);
