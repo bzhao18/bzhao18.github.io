@@ -55,7 +55,7 @@ body {
 }
 section {
     scroll-margin-top: 6rem;
-    padding: 0rem 5rem;
+    padding: 0rem 6vw;
     margin-bottom: var(--section-space);
 }
 

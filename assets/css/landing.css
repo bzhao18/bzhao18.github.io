@@ -1,18 +1,41 @@
 @import "styles.css";
 
-.landing{
-    padding: 0rem 5rem;
+.landing {
     height: 85vh;
+    margin-bottom: var(--section-space);
+    display: flex;
+    align-items: center;
+}
+.landing-content{
     display: flex;
     flex-direction: column;
-    align-items: left;
-    position: relative;
-    margin-bottom: var(--section-space);
-    background-image: url("../images/profile_v0.png");
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    background-attachment: 'local';
-    background-position: bottom right;
+    gap: 1.5rem;
+}
+
+@media screen and (min-width: 1000px) {
+    .landing{
+        background-image: url("../images/profile_v0.png");
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        background-attachment: 'local';
+        background-position: bottom right;
+    }
+
+}
+@media screen and (max-width: 1000px) {
+    .landing{
+        justify-content: center;
+    }
+    .landing-content{
+        align-items: center;
+        text-align: center;
+    }
+    .landing-text-titles{
+        align-items: center;
+    }
+    .landing-text-cta{
+        justify-content: center;
+    }
 }
 
 .landing a {
@@ -24,14 +47,13 @@
 }
 
 .landing-name{
-    padding-top: 4%;
     font-family: var(--header-font-family);
     font-weight: var(--bolder-font);
-    font-size: clamp(5rem, 11vw, 10rem);
+    font-size: clamp(6rem, 11vw, 10rem);
     background-color: var(--primary-accent);
     background-image: linear-gradient(
         30deg,
-        var(--primary-accent) 25%, 
+        var(--primary-accent) 25%,
         var(--secondary-color) 50%, 
         var(--primary-color) 100%);
     background-size: 100%;
@@ -55,33 +77,30 @@
 }
 
 .landing-social {
-    font-size: 1.15rem;
-    padding: 0.5rem;
+    font-size: clamp(0.7rem, 1.25vw, 1.15rem);
 }
 .social-icon{
-    margin: 1rem;
+    margin: 1vw;
 }
 
-.landing-text{
-    padding: 1rem;
+.landing-text-titles{
+    padding-bottom: 1rem;
     display: flex;
     flex-direction: column;
+    gap: 1rem;
 }
 .landing-text-titles p{
-    line-height: 1;
-    margin-bottom: 1rem;
+    font-size: clamp(1.25rem, 2vw, 2rem);
 }
 
 .landing-text-cta{
     display: flex;
     flex-direction: row;
-    justify-content: left;
-    justify-content: left;
 }
 .landing-text-cta button{
     font-family: var(--header-font-family);
     font-weight: var(--bolder-font);
-    font-size: 2rem;
+    font-size: clamp(1.2rem, 3vw, 2rem);
     color: var(--secondary-color);
     border: 3px solid var(--secondary-color);
     background-color: var(--bg-color);
