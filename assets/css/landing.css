@@ -1,7 +1,8 @@
 @import "styles.css";
 
 .landing {
-    height: 85vh;
+    height: 100%;
+    min-height: 85vh;
     margin-bottom: var(--section-space);
     display: flex;
     align-items: center;
@@ -96,7 +97,7 @@
 .landing-text-cta{
     display: flex;
     flex-direction: row;
-    margin-bottom: 5rem;
+    margin-bottom: 3rem;
 }
 .landing-text-cta button{
     font-family: var(--header-font-family);
