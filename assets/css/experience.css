@@ -34,7 +34,7 @@
     gap: 1rem;
 }
 .logo {
-    width: 80px;
+    width: clamp(60px, 10vw, 80px);
 }
 .logo-header {
     margin-right: auto;
@@ -85,10 +85,10 @@
     transition: var(--transition);
 }
 
-@media screen and (max-width: 600px) {
-    .logo {
+@media screen and (max-width: 800px) {
+    /* .logo {
         display: none;
-    }
+    } */
     .content-container {
         padding-left: 2rem;
     }
