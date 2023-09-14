@@ -5,7 +5,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 70vh;
+    height: 100vh;
     gap: 5rem;
     background-color: var(--secondary-color);
     margin-bottom: 0rem;
@@ -22,5 +22,6 @@
 }
 
 .contact-email {
-    font-size: 3.5rem;
+    font-size: clamp(0rem, 7vw, 3.5rem);
+    white-space: nowrap;
 }

@@ -51,10 +51,10 @@ body {
     font-family: var(--font-family);
     font-weight: var(--normal-font);
     color: var(--primary-color);
-    font-size: 1.5rem;
+    font-size: clamp(1.15rem, 3vw, 1.5rem);
 }
 section {
-    scroll-margin-top: 6rem;
+    scroll-margin-top: 0rem;
     padding: 0rem 6vw;
     margin-bottom: var(--section-space);
 }
@@ -62,25 +62,32 @@ section {
 h1 {
     font-family: var(--header-font-family);
     font-weight: var(--bolder-font);
-    font-size: 4rem;
+    font-size: clamp(3rem, 8vw, 4rem);
     color: var(--secondary-color);
 }
 h2 {
     font-family: var(--header-font-family);
     font-weight: var(--bolder-font);
-    font-size: 2rem;
+    font-size: clamp(1.75rem, 4vw, 2rem);
     color: var(--secondary-color);
 }
 h3 {
     font-family: var(--header-font-family);
-    font-weight: var(--bold-font);
-    font-size: 1.5rem;
+    font-weight: var(--bolder-font);
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
     color: var(--primary-color);
 }
 h4 {
-    font-family: var(--font-family);
+    font-family: var(--header-font-family);
     font-weight: var(--normal-font);
-    font-size: 1.25rem;
+    font-style: italic;
+    font-size: clamp(1.15rem, 2vw, 1.25rem);
     color: var(--primary-color);
+}
+
+h5 {
+    font-family: var(--header-font-family);
+    font-weight: var(--bold-font);
+    font-size: clamp(1.15rem, 2vw, 1.25rem);
 }
 /* CSS Resets End */

@@ -2,10 +2,6 @@
 
 nav {
     height: 15vh;
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 10;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -44,3 +40,96 @@ nav ul li {
     font-weight: var(--bold-font);
     font-size: 1.25rem;
 }
+
+@media screen and (max-width: 1000px) {
+    nav {
+        flex-direction: column;
+    }
+    
+    .nav-items {
+        display: none;
+    }
+}
+
+/* @media screen and (min-width: 1000px) {
+    .checkbox {
+        display: none;
+    }
+
+    .hamburger {
+        display: none;
+    }
+} */
+
+/* @media screen and (max-width: 1000px) {
+    .nav-items {
+        transform-origin: 0% 0%;
+        transform: translate(-150%);
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.5s ease-in-out;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+    }
+    .checkbox {
+        display: block;
+        height: 32px;
+        width: 32px;
+        z-index: 2;
+        opacity: 0;
+        cursor: pointer;
+    }
+
+    .hamburger-lines {
+        margin-top: -29px;
+        display: block;
+        height: 26px;
+        width: 32px;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .hamburger-lines .line {
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: var(--secondary-color);
+    }
+
+    .hamburger-lines .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    .hamburger-lines .line2 {
+        transition: transform 0.2s ease-in-out;
+    }
+
+    .hamburger-lines .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+    }
+
+    input[type="checkbox"]:checked ~ .nav-items {
+        transform: translate(-10%);
+    }
+
+    input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+        transform: rotate(45deg);
+    }
+
+    input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+        transform: scaleY(0);
+    }
+
+    input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+        transform: rotate(-45deg);
+    }
+} */

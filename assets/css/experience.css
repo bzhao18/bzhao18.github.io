@@ -9,22 +9,6 @@
     gap: 1rem;
 }
 
-.experience h3 {
-    font-family: var(--header-font-family);
-    font-weight: var(--bolder-font);
-    font-size: 2rem;
-}
-.experience h4 {
-    font-family: var(--header-font-family);
-    font-weight: var(--normal-font);
-    font-style: italic;
-    font-size: 1.5rem;
-}
-.experience h5 {
-    font-family: var(--header-font-family);
-    font-weight: var(--bold-font);
-    font-size: 1.5rem;
-}
 .experience p {
     font-size: 1.25rem;
 }
@@ -58,9 +42,10 @@
 .date {
     font-weight: var(--bolder-font);
     font-style: italic;
+    min-width: 6rem;
 }
 .date p {
-    font-size: 1.25rem;
+    font-size: clamp(1rem, 2vw, 1.25rem);
 }
 
 .content-container {
@@ -98,4 +83,13 @@
     border: 3px solid var(--primary-accent);
     background-color: var(--primary-accent);
     transition: var(--transition);
+}
+
+@media screen and (max-width: 600px) {
+    .logo {
+        display: none;
+    }
+    .content-container {
+        padding-left: 2rem;
+    }
 }
