@@ -1,0 +1,30 @@
+@import "./index.css";
+
+.footer{
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    background-color: var(--secondary-color);
+    padding-top: 5rem;
+    padding-bottom: 2.5rem;
+    margin-bottom: 0rem;
+    text-align: center;
+}
+
+.footer p {
+    color: var(--primary-accent);
+    font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+.footer a {
+    color: var(--primary-accent);
+    border-bottom: 2px solid transparent;
+}
+
+.footer a:hover {
+    color: var(--primary-accent);
+    border-bottom: 2px solid var(--primary-accent);
+}

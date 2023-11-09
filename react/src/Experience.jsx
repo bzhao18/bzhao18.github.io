@@ -1,124 +1,17 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Bryan Zhao</title>
-        <meta name="description" content="Bryan Zhao's Personal Portfolio">
-        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="stylesheet" href="assets/css/nav.css">
-        <link rel="stylesheet" href="assets/css/landing.css">
-        <link rel="stylesheet" href="assets/css/about.css">
-        <link rel="stylesheet" href="assets/css/experience.css">
-        <link rel="stylesheet" href="assets/css/contact.css">
-        <link rel="stylesheet" href="assets/css/footer.css">
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/dark-mode/apple-touch-icon.png" media="(prefers-color-scheme: dark)">
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/dark-mode/favicon-32x32.png" media="(prefers-color-scheme: dark)">
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/dark-mode/favicon-16x16.png" media="(prefers-color-scheme: dark)">
-        <link rel="manifest" href="assets/icons/dark-mode/site.webmanifest" media="(prefers-color-scheme: dark)">
-        <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/light-mode/apple-touch-icon.png" media="(prefers-color-scheme: light)">
-        <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/light-mode/favicon-32x32.png" media="(prefers-color-scheme: light)">
-        <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/light-mode/favicon-16x16.png" media="(prefers-color-scheme: light)">
-        <link rel="manifest" href="assets/icons/light-mode/site.webmanifest" media="(prefers-color-scheme: light)">
-        <script src="https://kit.fontawesome.com/38cb739678.js" crossorigin="anonymous"></script>
-        <script src="assets/js/app.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+import "./Experience.css"
+import gt from "./assets/images/gt.png"
+import ghs from "./assets/images/ghs.png"
+import mitll from "./assets/images/mitll.png"
+import bmw from "./assets/images/bmw.png"
+import raytheon from "./assets/images/raytheon.png"
+import anduril from "./assets/images/anduril.png"
+import core from "./assets/images/core.png"
+import gtri from "./assets/images/gtri.png"
+import epic from "./assets/images/epic.png"
+import nsmrl from "./assets/images/nsmrl.png"
 
-        <!-- Navbar -->
-        <nav>
-            <p><a href="#top" class="nav-initials">BZ</a></p>
-            <!-- <div class="hamburger">
-                <input class="checkbox" type="checkbox" name="" id="" />
-                <div class="hamburger-lines">
-                    <span class="line line1"></span>
-                    <span class="line line2"></span>
-                    <span class="line line3"></span>
-                </div>
-            </div> -->
-            <div class="nav-items">
-                <ul class="nav-bar">
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#experience" class="nav-link">Experience</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-
-        <!-- Landing -->
-        <section class="landing" id="landing">
-            <div class="landing-content">
-                <p class="landing-name">Bryan Zhao</p>
-                <div class="landing-social">
-                    <a class="social-icon" href="tel:860-328-9421" target="_blank" rel="noopener noreferrer">
-                        <span class="fa-stack fa-2x">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-phone fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                    <a class="social-icon" href="mailto: bryanzhao@gatech.edu" target="_blank" rel="noopener noreferrer">
-                        <span class="fa-stack fa-2x">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                    <a class="social-icon" href="https://www.linkedin.com/in/bryan-zhao/" target="_blank" rel="noopener noreferrer">
-                        <span class="fa-stack fa-2x">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                    <a class="social-icon" href="https://github.com/bzhao18" target="_blank" rel="noopener noreferrer">
-                        <span class="fa-stack fa-2x">
-                            <i class="fa fa-circle fa-stack-2x"></i>
-                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                        </span>
-                    </a>
-                </div>
-                <div class="landing-text">
-                    <span class="landing-text-titles">
-                        <p>Computer Scientist at the <a href="https://www.cc.gatech.edu/" target="_blank" rel="noopener noreferrer">Georgia Institute of Technology</a></p>
-                        <p>AI Researcher at the <a href="https://www.ll.mit.edu/" target="_blank" rel="noopener noreferrer">MIT Lincoln Laboratory</a></p>
-                        <p>Head Teaching Assistant for <a href="https://mahdi-roozbahani.github.io/teaching/course4ml" target="_blank" rel="noopener noreferrer">Machine Learning</a></p>
-                    </span>
-                    <span class="landing-text-cta">
-                        <form action="assets/Bryan_Zhao_CV.pdf" target="_blank" rel="noopener noreferrer">
-                            <button type="submit">CV</button>
-                        </form>
-                        <form action="#about">
-                            <button type="submit">Get to Know Me</button>
-                        </form>
-                    </span>
-                </div>
-            </div>
-        </section>
-
-        <!-- About -->
-        <section class="about" id="about">
-            <h1 class="bio-title">About</h1>
-            <div class="bio">
-                <p class="bio-text">Hi, I'm Bryan, an engineer turned computer scientist who is pursuing a Master's degree at Georgia Tech.</p>
-                
-                <p class="bio-text">I pivoted because I wanted to design the brains rather than the brawn of systems and devices. Using machine learning and artificial intelligence, I teach robots how to learn, see, and communicate with us. I love discovering new deep learning architectures and implementing them to enhance the abilities of robots and other forms of embodied AI. Ultimately, I hope to integrate new and emerging AI technologies seamlessly into society to improve our everyday lives.</p>
-                    
-                <p class="bio-text">Currently, I am working part-time at the MIT Lincoln Laboratory to develop AI algorithms for the <a href="https://bostondynamics.com/products/spot/" target="_blank" rel="noopener noreferrer">Spot robot</a>. We are developing a framework that will enable agents to operate in highly dynamic outdoor environments for search-and-rescue missions by leveraging 3D scene graph technologies such as <a href="https://github.com/MIT-SPARK/Hydra" target="_blank" rel="noopener noreferrer">MIT Hydra</a>.</p>
-
-                <p class="bio-text">Previously, I revamped the vision system for a <a href="https://core-robotics-lab.github.io/Wheelchair-Tennis-Robot/" target="_blank" rel="noopener noreferrer">tennis-playing robot</a> and improved its ability to detect and hit tennis balls in real-time using NVIDIA Jetson GPUs. I also interned at BMW's IT Research Center where I conducted research on Large Language Models, enormous neural networks that are trained on vast amounts of online text data to understand and generate language. In the end, I built a prototype using <a href="https://openai.com/blog/gpt-3-apps" target="_blank" rel="noopener noreferrer">GPT-3</a> which was the precursor to ChatGPT and GPT-4 recently released by OpenAI. Through my experiences, I aim to build a strong foundation in computer vision, natural language processing, and software systems for machine learning applications.</p>
-
-                <p class="bio-text">During my time as an engineer, I built robotic systems at Raytheon and Anduril, and I collaborated with NASA JPL to design the liquid sampler of their <a href="https://www-robotics.jpl.nasa.gov/how-we-do-it/systems/exobiology-extant-life-surveyor-eels/" target="_blank" rel="noopener noreferrer">EELS space robot</a>. In my free time, I like to play soccer, cook new recipes, and hit the gym. I am also rated in the 75th percentile of players on <a href="https://www.chess.com/" target="_blank" rel="noopener noreferrer">Chess.com</a>.</p>
-            </div>
-        </section>
-
-        <!-- Experience -->
+function Experience () {
+    return (
         <section class="experience" id="experience">
             <h1 class="experience-title">Experience</h1>
 
@@ -126,7 +19,7 @@
             <div class="section education">
                 <div class="item">
                     <div class="logo-container">
-                        <img src="assets/images/gt.png"
+                        <img src={gt}
                         alt="Georgia Insitute of Technology"
                         loading="lazy"
                         class="logo"/>
@@ -152,7 +45,7 @@
 
                 <div class="item">
                     <div class="logo-container">
-                        <img src="assets/images/gt.png"
+                        <img src={gt}
                         alt="Georgia Insitute of Technology"
                         loading="lazy"
                         class="logo"/>
@@ -186,7 +79,7 @@
 
                 <div class="item">
                     <div class="logo-container">
-                        <img src="assets/images/ghs.png"
+                        <img src={ghs}
                         alt="Glastonbury High School"
                         loading="lazy"
                         class="logo"/>
@@ -214,7 +107,7 @@
             <div class="section work">
                 <div class="item mitll">
                     <div class="logo-container">
-                        <img src="assets/images/mitll.png"
+                        <img src={mitll}
                         alt="MIT Lincoln Laboratory"
                         loading="lazy"
                         class="logo"/>
@@ -237,7 +130,7 @@
 
                 <div class="item bmw">
                     <div class="logo-container">
-                        <img src="assets/images/bmw.png"
+                        <img src={bmw}
                         alt="BMW"
                         loading="lazy"
                         class="logo"/>
@@ -260,7 +153,7 @@
                 
                 <div class="item raytheon">
                     <div class="logo-container">
-                        <img src="assets/images/raytheon.png"
+                        <img src={raytheon}
                         alt="Raytheon Technologies"
                         loading="lazy"
                         class="logo"/>
@@ -282,7 +175,7 @@
 
                 <div class="item anduril">
                     <div class="logo-container">
-                        <img src="assets/images/anduril.png"
+                        <img src={anduril}
                         alt="Anduril"
                         loading="lazy"
                         class="logo"/>
@@ -307,7 +200,7 @@
             <div class="section research">
                 <div class="item core">
                     <div class="logo-container">
-                        <img src="assets/images/core.png"
+                        <img src={core}
                         alt="CORE Robotics Laboratory"
                         loading="lazy"
                         class="logo"/>
@@ -343,7 +236,7 @@
 
                 <div class="item gtri">
                     <div class="logo-container">
-                        <img src="assets/images/gtri.png"
+                        <img src={gtri}
                         alt="Georgia Tech Research Institute"
                         loading="lazy"
                         class="logo"/>
@@ -365,7 +258,7 @@
 
                 <div class="item epic">
                     <div class="logo-container">
-                        <img src="assets/images/epic.png"
+                        <img src={epic}
                         alt="EPIC Laboratory"
                         loading="lazy"
                         class="logo"/>
@@ -387,7 +280,7 @@
 
                 <div class="item nsmrl">
                     <div class="logo-container">
-                        <img src="assets/images/nsmrl.png"
+                        <img src={nsmrl}
                         alt="NSMRL"
                         loading="lazy"
                         class="logo"/>
@@ -407,35 +300,9 @@
                     </div>
                 </div>
             </div>
-
-            <!-- <h2 class="project-title">Projects</h2>
-            <div class="section project">
-            </div>
-
-            <h2 class="skills-title">Skills</h2>
-            <div class="section skills">
-            </div> -->
         </section>
+    )
 
-        <!-- Contact -->
-        <section class="contact" id="contact">
-            <a class="contact-email" href="mailto: bryanzhao@gatech.edu" target="_blank" rel="noopener noreferrer">bryanzhao@gatech.edu ⇒</a>
+}
 
-            <div class="contact-social">
-                <a class="social-icon" href="tel:860-328-9421" target="_blank" rel="noopener noreferrer">Phone</a>
-                <a class="social-icon" href="https://www.linkedin.com/in/bryan-zhao/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a class="social-icon" href="https://github.com/bzhao18" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
-        </section>
-
-        <!-- Scroll to top -->
-
-        <!-- Footer -->
-        <section class="footer" id="footer">
-            <p>This website is available on <a href="https://github.com/bzhao18/bzhao18.github.io" target="_blank" rel="noopener noreferrer">GitHub</a></p>
-        </section>
-
-        <!-- Website scripts -->
-        <script src="assets/js/app.js" async defer></script>
-    </body>
-</html>
+export default Experience

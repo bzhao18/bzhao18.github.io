@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
+
+/* Variables */
+:root {
+    --font-family: "Gothic A1", sans-serf;
+    --header-font-family: "Montserrat", sans-serf;
+    --thin-font: 200;
+    --normal-font: 400;
+    --bold-font: 700;
+    --bolder-font: 900;
+    --bg-color: #FFFFFF;
+    --primary-color: #343232;
+    --secondary-color: #29428C;
+    --primary-accent: #94CEDB;
+    --transition: 0.5s;
+    --section-space: 5rem;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: var(--bg-color);
+}
+
+/* CSS Resets Start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+ul {
+    list-style-type: none;
+}
+
+a {
+    font-weight: var(--bold-font);
+    text-decoration: none;
+    color: var(--secondary-color);
+    border-bottom: 3px solid var(--secondary-color);
+}
+
+a:hover {
+    color: var(--primary-accent);
+    transition: var(--transition);
+    border-bottom: 3px solid var(--primary-accent);
+}
+
+body {
+    font-family: var(--font-family);
+    font-weight: var(--normal-font);
+    color: var(--primary-color);
+    font-size: clamp(1.15rem, 3vw, 1.5rem);
+}
+section {
+    scroll-margin-top: 0rem;
+    padding: 0rem 6vw;
+    margin-bottom: var(--section-space);
+}
+
+h1 {
+    font-family: var(--header-font-family);
+    font-weight: var(--bolder-font);
+    font-size: clamp(3rem, 8vw, 4rem);
+    color: var(--secondary-color);
+}
+h2 {
+    font-family: var(--header-font-family);
+    font-weight: var(--bolder-font);
+    font-size: clamp(1.75rem, 4vw, 2rem);
+    color: var(--secondary-color);
+}
+h3 {
+    font-family: var(--header-font-family);
+    font-weight: var(--bolder-font);
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    color: var(--primary-color);
+}
+h4 {
+    font-family: var(--header-font-family);
+    font-weight: var(--normal-font);
+    font-style: italic;
+    font-size: clamp(1.15rem, 2vw, 1.25rem);
+    color: var(--primary-color);
+}
+
+h5 {
+    font-family: var(--header-font-family);
+    font-weight: var(--bold-font);
+    font-size: clamp(1.15rem, 2vw, 1.25rem);
+}
+/* CSS Resets End */

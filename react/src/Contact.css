@@ -1,0 +1,27 @@
+@import "./index.css";
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 5rem;
+    background-color: var(--secondary-color);
+    margin-bottom: 0rem;
+}
+
+.contact a {
+    color: var(--bg-color);
+    border-bottom: 2px solid transparent;
+}
+
+.contact a:hover {
+    color: var(--primary-accent);
+    border-bottom: 2px solid var(--primary-accent);
+}
+
+.contact-email {
+    font-size: clamp(0rem, 7vw, 3.5rem);
+    white-space: nowrap;
+}
